@@ -1,10 +1,10 @@
-# Scikit-Learn Model Training & Evaluation Pipeline
+# Diabetes ML Model Training & Evaluation Pipeline
 
 A lightweight machine learning project demonstrating dataset handling, model training, evaluation metrics, and retraining workflows using `scikit-learn`.
 
 ## 📌 Overview
 
-This project showcases a fundamental Machine Learning workflow using Python and Scikit-Learn. It loads the built-in Scikit-Learn Diabetes dataset, trains a baseline `LinearRegression` model, evaluates performance across multiple regression metrics, and demonstrates conditional model retraining logic.
+This small project showcases a fundamental Machine Learning workflow using Python and Scikit-Learn. It loads the built-in Scikit-Learn Diabetes dataset, trains a baseline `LinearRegression` model, evaluates performance across multiple regression metrics, and demonstrates conditional model retraining logic.
 
 ## 🚀 Key Features
 
