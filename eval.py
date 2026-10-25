@@ -4,11 +4,14 @@ from sklearn.metrics import mean_squared_error
 from train import trained_model
 from train import retrain_model, X_test, y_test
 
-# Evaluate the model using test data
+# Use the imported trained model to predict disease progression 1 year after baseline on test data
+y_pred = trained_model.predict(X_test)
+
+# Evaluate the model using test data, comparing predicted values against actual values
 scores = {
-    'R2 Score': r2_score(y_test, trained_model.predict(X_test)),
-    'Mean Absolute Error': mean_absolute_error(y_test, trained_model.predict(X_test)),
-    'Mean Squared Error': mean_squared_error(y_test, trained_model.predict(X_test))
+    'R2 Score': r2_score(y_test, y_pred),
+    'Mean Absolute Error': mean_absolute_error(y_test, y_pred),
+    'Mean Squared Error': mean_squared_error(y_test, y_pred)
 }
 
 # Print the results of the evaluations
